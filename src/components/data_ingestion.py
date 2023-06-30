@@ -1,4 +1,5 @@
 # data_ingestion.py file is used to read data from different sources
+# After reading the data we are splitting the dataset into train and test
 
 import os
 import sys
@@ -8,6 +9,9 @@ import pandas as pd
 
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
+
+from src.components.data_transformation import DataTransformationConfig
+from src.components.data_transformation import DataTransformation
 
 class DataIngestionConfig:
     train_data_path = os.path.join('artifacts', 'train.csv')
@@ -30,6 +34,12 @@ class DataIngestion:
             # Saving raw data file in artifacts folder
             df.to_csv(self.ingestion_config.raw_data_path, index=False, header=True)
 
+            # -------------  Some changes in dataframe before train test split  ----------------
+            # Removing 'Item_Identifier' and 'Outlet_Identifier' columns
+            df.drop( columns=['Item_Identifier', 'Outlet_Identifier'], inplace=True)
+            # Replacing 'LF' and 'low fat' with 'Low Fat' and 'reg' with 'Regular' in "Item_Fat_Content" feature
+            df['Item_Fat_Content'] = df['Item_Fat_Content'].replace({'LF': 'Low Fat', 'low fat': 'Low Fat', 'reg': 'Regular'})
+
             # Splitting data dataset into train and test part
             train_set, test_set = train_test_split(df, test_size=0.2, random_state=42)
 
@@ -46,5 +56,9 @@ class DataIngestion:
 
 # if __name__ == "__main__":
 #     obj = DataIngestion()
-#     file_path =  obj.data_ingestion_process()
-#     print("File path: ", file_path)
+#     train_path, test_path =  obj.data_ingestion_process()
+#     print("File path: ", (train_path, test_path) )
+#
+#     obj = DataTransformation()
+#     _,_,  preprocessor_path = obj.data_transformation_process(train_path, test_path)
+#     print("Column transformer path: ", preprocessor_path)
