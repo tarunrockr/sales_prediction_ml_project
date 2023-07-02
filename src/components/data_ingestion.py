@@ -1,9 +1,8 @@
 # data_ingestion.py file is used to read data from different sources
 # After reading the data we are splitting the dataset into train and test
-
 import os
 import sys
-from src.exception import CustomException
+from  src.exception import CustomException
 from  src.logger import logging
 import pandas as pd
 
@@ -13,6 +12,10 @@ from dataclasses import dataclass
 from src.components.data_transformation import DataTransformationConfig
 from src.components.data_transformation import DataTransformation
 
+from src.components.model_trainer import ModelTrainerConfig
+from src.components.model_trainer import ModelTrainer
+
+@dataclass
 class DataIngestionConfig:
     train_data_path = os.path.join('artifacts', 'train.csv')
     test_data_path  = os.path.join('artifacts', 'test.csv')
@@ -52,7 +55,7 @@ class DataIngestion:
             return self.ingestion_config.train_data_path, self.ingestion_config.test_data_path
 
         except Exception as e:
-            raise  CustomException(e, sys)
+            raise CustomException(e, sys)
 
 # if __name__ == "__main__":
 #     obj = DataIngestion()
@@ -60,5 +63,11 @@ class DataIngestion:
 #     print("File path: ", (train_path, test_path) )
 #
 #     obj = DataTransformation()
-#     _,_,  preprocessor_path = obj.data_transformation_process(train_path, test_path)
+#     train_array, test_array, preprocessor_path = obj.data_transformation_process(train_path, test_path)
 #     print("Column transformer path: ", preprocessor_path)
+#
+#     model_trainer_obj = ModelTrainer()
+#     r2_score_value    = model_trainer_obj.model_training_process(train_array, test_array)
+#     print("Final R2 value: ", r2_score_value)
+
+

@@ -1,3 +1,4 @@
+# In this script we are imputing missing values, applying endonging and scaling numerical features with pipeline and column transformer
 import sys, os
 import  numpy as np
 import pandas as pd
@@ -12,6 +13,7 @@ from src.logger import logging
 from dataclasses import  dataclass
 from src import utils
 
+@dataclass
 class DataTransformationConfig:
     preprocessor_object_path = os.path.join('artifacts', 'preprocessor.pkl')
 

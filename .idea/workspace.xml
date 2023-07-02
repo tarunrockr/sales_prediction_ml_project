@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dac71a1-4360-41dd-b7d3-f211b6b3997b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/artifacts/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/artifacts/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artifacts/train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/artifacts/train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/data_ingestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/data_ingestion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/data_transformation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/data_transformation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/model_trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model_trainer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,52 +18,61 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/data_transformation.py">
+        <entry file="file://$PROJECT_DIR$/src/components/data_ingestion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="370">
+              <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/data_ingestion.py">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="57" column="27" lean-forward="true" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
-              <folding>
-                <element signature="e#144#153#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="308">
+              <caret line="122" column="11" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/data_transformation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/model_trainer.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pipelines/train_pipeline.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pipelines/predict_pipeline.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+              <folding>
+                <element signature="e#2#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="391">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="31" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -79,10 +89,12 @@
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/src/logger.py" />
         <option value="$PROJECT_DIR$/src/exception.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/src/components/data_transformation.py" />
         <option value="$PROJECT_DIR$/src/utils.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/src/components/model_trainer.py" />
         <option value="$PROJECT_DIR$/src/components/data_ingestion.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -106,7 +118,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,21 +130,11 @@
               <item name="big_mart_sales_prediction" type="462c0819:PsiDirectoryNode" />
               <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="big_mart_sales_prediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="big_mart_sales_prediction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="big_mart_sales_prediction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="big_mart_sales_prediction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -180,13 +181,32 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32956153" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14729194" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.txt">
@@ -211,16 +231,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logs/log_21_06_2023_184743.log" />
     <entry file="file://$PROJECT_DIR$/logs/21_06_2023/log_21_06_2023_190558.log" />
-    <entry file="file://$PROJECT_DIR$/logs/21_06_2023/log_21_06_2023_192533.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46" selection-start-column="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/model_trainer.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/21_06_2023/log_21_06_2023_192533.log" />
     <entry file="file://$PROJECT_DIR$/src/pipelines/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -234,13 +245,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/exception.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -251,45 +255,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/29_06_2023/log_29_06_2023_131123.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logs/29_06_2023/log_29_06_2023_132917.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/29_06_2023/log_29_06_2023_131123.log" />
+    <entry file="file://$PROJECT_DIR$/logs/29_06_2023/log_29_06_2023_132917.log" />
     <entry file="file://$PROJECT_DIR$/src/pipelines/predict_pipeline.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pipelines/train_pipeline.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/data_ingestion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="62" column="29" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/data_transformation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
+        <state relative-caret-position="153">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/model_trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#2#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="391">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="31" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/data_ingestion.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="57" column="27" lean-forward="true" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
-          <folding>
-            <element signature="e#144#153#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="122" column="11" selection-start-line="122" selection-start-column="11" selection-end-line="122" selection-end-column="11" />
         </state>
       </provider>
     </entry>
