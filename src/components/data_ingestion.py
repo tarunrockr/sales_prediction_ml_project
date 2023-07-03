@@ -57,17 +57,17 @@ class DataIngestion:
         except Exception as e:
             raise CustomException(e, sys)
 
-# if __name__ == "__main__":
-#     obj = DataIngestion()
-#     train_path, test_path =  obj.data_ingestion_process()
-#     print("File path: ", (train_path, test_path) )
-#
-#     obj = DataTransformation()
-#     train_array, test_array, preprocessor_path = obj.data_transformation_process(train_path, test_path)
-#     print("Column transformer path: ", preprocessor_path)
-#
-#     model_trainer_obj = ModelTrainer()
-#     r2_score_value    = model_trainer_obj.model_training_process(train_array, test_array)
-#     print("Final R2 value: ", r2_score_value)
+if __name__ == "__main__":
+    obj = DataIngestion()
+    train_path, test_path =  obj.data_ingestion_process()
+    print("File path: ", (train_path, test_path) )
+
+    obj = DataTransformation()
+    train_array, test_array, preprocessor_path = obj.data_transformation_process(train_path, test_path)
+    print("Column transformer path: ", preprocessor_path)
+
+    model_trainer_obj = ModelTrainer()
+    r2_score_value    = model_trainer_obj.model_training_process(train_array, test_array)
+    print("Final R2 value: ", r2_score_value)
 
 

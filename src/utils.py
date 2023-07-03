@@ -8,6 +8,7 @@ import  numpy as np
 from src.exception import CustomException
 from src.logger import logging
 from sklearn.metrics import  r2_score
+from sklearn.model_selection import GridSearchCV
 
 def save_obj_as_pkl(path, obj):
     try:
@@ -24,7 +25,7 @@ def save_obj_as_pkl(path, obj):
     except Exception as e:
         raise CustomException(e, sys)
 
-def model_prediction(X_train, X_test, y_train, y_test, models):
+def model_prediction(X_train, X_test, y_train, y_test, models, params):
     try:
         result = {}
 
@@ -32,6 +33,11 @@ def model_prediction(X_train, X_test, y_train, y_test, models):
             model_name = list(models.keys())[i]
             model      = models[model_name]
 
+            hyper_parameters = params[model_name]
+            clf = GridSearchCV(model, hyper_parameters, cv=5)
+            clf.fit(X_train, y_train)
+
+            model.set_params(**clf.best_params_)
             model.fit(X_train, y_train)
 
             y_train_pred = model.predict(X_train)
