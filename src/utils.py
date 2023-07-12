@@ -17,7 +17,7 @@ def save_obj_as_pkl(path, obj):
         os.makedirs(dir_name, exist_ok=True)
 
         # Saving object as pkl file
-        pickle.dump(object, open(path, mode='wb'))
+        pickle.dump(obj, open(path, 'wb'))
 
         # with open(path, 'wb') as file_obj:
         #     dill.dump(object, file_obj)
@@ -49,5 +49,13 @@ def model_prediction(X_train, X_test, y_train, y_test, models, params):
             result[model_name] = test_score
 
         return result
+    except Exception as e:
+        raise CustomException(e, sys)
+
+def load_pickle_object(path):
+    try:
+        with open(path, 'rb') as obj:
+            file_obj = pickle.load(obj)
+        return  file_obj
     except Exception as e:
         raise CustomException(e, sys)
